@@ -1,16 +1,95 @@
-# game_solva
+# Игра "Угадай число"
 
-A new Flutter project.
+Мобильное приложение на Flutter, в котором пользователь должен угадать случайно сгенерированное число за ограниченное количество попыток.
 
-## Getting Started
+## Описание
 
-This project is a starting point for a Flutter application.
+Приложение представляет собой игру, где:
+- Система загадывает случайное число в выбранном диапазоне
+- Пользователь имеет ограниченное количество попыток для угадывания
+- После каждой попытки предоставляется подсказка ("больше" или "меньше")
+- Игра завершается победой при угадывании числа или поражением при исчерпании попыток
 
-A few resources to get you started if this is your first Flutter project:
+## Требования
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Flutter SDK (версия >= 3.0.0)
+- Dart SDK (версия >= 3.0.0)
+- Android Studio / VS Code с установленным Flutter плагином
+- iOS Simulator или Android Emulator для тестирования
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Установка
+
+1. Убедитесь, что у вас установлен Flutter SDK:
+```bash
+flutter --version
+```
+
+2. Клонируйте репозиторий:
+```bash
+git clone <url-репозитория>
+cd game_solva
+```
+
+3. Установите зависимости:
+```bash
+flutter pub get
+```
+
+## Запуск приложения
+
+### Запуск через IDE
+
+1. Откройте проект в Android Studio или VS Code
+2. Выберите целевое устройство (эмулятор или физическое устройство)
+3. Нажмите кнопку "Run" или используйте сочетание клавиш
+
+### Запуск через командную строку
+
+1. Подключите устройство или запустите эмулятор
+2. Проверьте доступные устройства:
+```bash
+flutter devices
+```
+
+3. Запустите приложение:
+```bash
+flutter run
+```
+
+## Зависимости
+
+Основные зависимости проекта:
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  flutter_bloc: ^8.1.6
+  bloc_test: ^9.1.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+```
+
+## Функциональность
+
+- Настраиваемый диапазон чисел
+- Настраиваемое количество попыток
+- Визуальные подсказки после каждой попытки
+- История предыдущих попыток
+- Адаптивный дизайн
+- Поддержка iOS и Android
+
+## Вклад в проект
+
+1. Создайте форк репозитория
+2. Создайте ветку для новой функциональности
+3. Отправьте пулл-реквест
+
+
+## Контакты
+
+При возникновении вопросов или проблем создавайте issue в репозитории проекта.
