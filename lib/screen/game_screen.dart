@@ -25,7 +25,7 @@ class _GameScreenState extends State<GameScreen> {
         child: BlocBuilder<GameBloc, GameState>(
           builder: (context, state) {
             if (state is GameInitial) {
-              return InitialScreen();
+              return const InitialScreen();
             } else if (state is GameInProgress) {
               return GameProgressScreen(state: state);
             } else if (state is GameWon) {
